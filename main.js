@@ -3,9 +3,10 @@ function verificarResposta(resposta) {
     var audioErro = new Audio('som/silvio-santos-que-pena-voce-errou.mp3');
 
     if (resposta === 3) {
-               audioAcerto.play();
+        document.getElementById('resultado').innerText = 'Acertou!';
+        audioAcerto.play();
     } else {
-        
+        document.getElementById('resultado').innerText = 'Você errou!';
         audioErro.play();
     }
 }
