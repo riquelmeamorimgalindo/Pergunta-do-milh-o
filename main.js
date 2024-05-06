@@ -5,7 +5,7 @@ function verificarResposta(resposta) {
         audio.play();
     } else {
         document.getElementById('resultado').innerText = 'Você errou!';
-        var audio = new audio('.audio-errado');
+        var audio = new audio('audio-errado');
         audio.play();
     }
 }
