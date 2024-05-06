@@ -1,11 +1,12 @@
 function verificarResposta(resposta) {
+    var audioAcerto = new Audio('silvio-santos-certa-resposta.mp3');
+    var audioErro = new Audio('silvio-santos-que-pena-voce-errou.mp3');
+
     if (resposta === 3) {
         document.getElementById('resultado').innerText = 'Acertou!';
-        var audio = new audio('silvio-santos-certa-resposta.mp3');
-        audio.play();
+        audioAcerto.play();
     } else {
         document.getElementById('resultado').innerText = 'Você errou!';
-        var audio = new audio('audio-errado');
-        audio.play();
+        audioErro.play();
     }
 }
