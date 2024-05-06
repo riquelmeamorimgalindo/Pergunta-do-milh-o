@@ -1,6 +1,6 @@
 function verificarResposta(resposta) {
-    var audioAcerto = new Audio('silvio-santos-certa-resposta.mp3');
-    var audioErro = new Audio('silvio-santos-que-pena-voce-errou.mp3');
+    var audioAcerto = new Audio('audio_acerto');
+    var audioErro = new Audio('audio_erro');
 
     if (resposta === 3) {
                audioAcerto.play();
