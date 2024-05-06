@@ -5,7 +5,7 @@ function verificarResposta(resposta) {
     if (resposta === 3) {
                audioAcerto.play();
     } else {
-        document.getElementById('resultado').innerText = 'Você errou!';
+        
         audioErro.play();
     }
 }
