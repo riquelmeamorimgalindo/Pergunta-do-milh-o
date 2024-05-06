@@ -1,9 +1,11 @@
-
-
 function verificarResposta(resposta) {
-    if (resposta === 2) {
-        document.querySelector ('#som-certo').play(  );
+    if (resposta === 3) {
+        document.getElementById('resultado').innerText = 'Acertou!';
+        var audio = new Audio('audio-certo');
+        audio.play();
     } else {
         document.getElementById('resultado').innerText = 'Você errou!';
+        var audio = new Audio('audio-errado');
+        audio.play();
     }
 }
